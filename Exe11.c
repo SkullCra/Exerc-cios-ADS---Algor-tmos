@@ -43,9 +43,11 @@ int main () {
 
         printf ("O valor da área do quadrado é de: %.2f.", area);
     }
-    else if (lados != 3 && lados != 4 && lados != 5) {
-        printf ("Comando inválido, saindo...");
+    else if (lados < 3) {
+        printf ("Não é um polígono, saindo...");
     }
-
+    else if (lados > 5) {
+        printf ("Polígono não identificado, saindo...");
+    }
     return 0;
-}
+    }
